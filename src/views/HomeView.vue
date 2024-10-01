@@ -66,22 +66,26 @@ const buyProduct = (productId: number) => {
         <!-- Product List -->
         <div class="grid grid-cols-4 gap-4 mt-5 mx-20">
             <div
-                class="card shadow-lg"
+                class="card shadow-lg flex flex-col justify-between"
                 v-for="product in filteredProducts"
                 :key="product.id"
             >
-                <div class="card-body">
+                <div class="card-body flex flex-col">
                     <img :src="product.image" alt="product" />
-                    <div class="card-title">{{ product.name }}</div>
+                    <div class="mt-auto">
+                        <div class="card-title mb-2">{{ product.name }}</div>
+                    <div class="card-actions justify-end mb-4">
+                        <div class="badge badge-outline">{{ product.type }}</div>
+                    </div>
                     <button
-                        class="btn btn-neutral"
+                        class="btn btn-neutral w-full"
                         @click="buyProduct(product.id)"
                     >
                         Buy Now
                     </button>
+                    </div>
                 </div>
             </div>
-            
         </div>
     </div>
 </template>

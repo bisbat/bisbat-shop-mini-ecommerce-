@@ -12,20 +12,20 @@ const goToHome = () => {
 <template>
     <div>
         <UserLayout/>
-        <div class="hero bg-base-200 min-h-screen">
+        <div class="hero bg-gray-100 min-h-screen">
             <div class="hero-content text-center">
                 <div class="max-w-md">
-                    <h1 class="text-5xl font-bold">Hello there</h1>
+                    <h1 class="text-5xl font-bold">Welcome to Our Furniture Shop</h1>
                     <p class="py-6">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                        assumenda excepturi exercitationem quasi. In deleniti
-                        eaque aut repudiandae et a id nisi.
+                        Discover timeless pieces for your home. From modern to classic designs, we provide high-quality furniture to elevate your living space.
                     </p>
-                    <button class="btn btn-primary" @click="goToHome">Get Started</button>
+                    <button class="btn btn-primary" @click="goToHome">Start Shopping</button>
                 </div>
             </div>
         </div>
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

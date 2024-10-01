@@ -19,7 +19,7 @@ const goToHome = () => {
                     <p class="py-6">
                         Discover timeless pieces for your home. From modern to classic designs, we provide high-quality furniture to elevate your living space.
                     </p>
-                    <button class="btn btn-primary" @click="goToHome">Start Shopping</button>
+                    <button class="btn btn-neutral" @click="goToHome">Start Shopping</button>
                 </div>
             </div>
         </div>

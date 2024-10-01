@@ -91,6 +91,8 @@ const goCheckout = () => {
                 <button
                     class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline"
                     @click="goCheckout"
+                    :class="{'cursor-not-allowed': cartStore.items.length === 0}"
+                    :disabled="cartStore.items.length === 0"
                     >
                     Proceed to Checkout
                 </button>

@@ -20,7 +20,7 @@ const goToHome = () => {
             <p class="text-gray-700 mb-4">
                 We have received your order. Thank you for shopping with us!
             </p>
-            <div class="bg-neutral text-white font-bold py-2 px-4 rounded hover:bg-neutral-800 focus:outline-none focus:shadow-outline" @click="goToHome">Go back to Home</div>
+            <div class="bg-neutral text-white font-bold py-2 px-4 rounded hover:bg-neutral-800 focus:outline-none focus:shadow-outline cursor-pointer" @click="goToHome">Go back to Home</div>
         </div>
     </div>
 </template>

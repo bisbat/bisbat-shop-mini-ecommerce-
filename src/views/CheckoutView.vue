@@ -1,8 +1,10 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import Userlayout from '@/layouts/UserLayout.vue'
+import { ref } from 'vue'
 
 const router = useRouter()
+const address = ref('')
 </script>
 
 <template>
@@ -20,9 +22,18 @@ const router = useRouter()
                 <input
                     type="text"
                     id="address"
+                    required
+                    v-model="address"
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    :class="{ 'border-red-500': !address }"
                     placeholder="Enter your address"
                 />
+                <p
+                    v-if="!address"
+                    class="text-red-500 text-xs italic"
+                >
+                    Please enter your address.
+                </p>
             </div>
             <div>
                 <label
@@ -46,6 +57,8 @@ const router = useRouter()
             <button
                 class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline"
                 @click="router.push('/success')"
+                :class="{ 'cursor-not-allowed disabled': !address }"
+                :disabled="!address"
             >
                 Confirm Payment
             </button>

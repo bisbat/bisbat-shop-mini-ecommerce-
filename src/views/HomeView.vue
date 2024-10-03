@@ -61,7 +61,7 @@ const buyProduct = (productId: number) => {
             </button>
         </div>
         <!-- Product List -->
-        <div class="grid grid-cols-4 gap-4 mt-5 mx-20">
+        <div class="grid lg:grid-cols-4 gap-4 mt-5 mx-20 md:grid-cols-3 sm:grid-cols-2">
             <div
                 class="card shadow-lg flex flex-col justify-between"
                 v-for="product in filteredProducts"

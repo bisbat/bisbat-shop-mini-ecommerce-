@@ -9,9 +9,8 @@ const router = useRouter();
 const searchInput = ref('');
 const emit = defineEmits(['update-search']);
 
-// Watch for changes in search input and emit the event
 const handleInput = () => {
-  emit('update-search', searchInput.value); // Emit the event with the input value
+    emit('update-search', searchInput.value); 
 };
 
 const goToHome = () => {

@@ -59,7 +59,6 @@ const goCheckout = () => {
                             >
                                 +
                             </button>
-                            <!-- X Button to Remove Entire Product -->
                             <button
                                 class="ml-4 bg-red-500 text-white rounded-full p-2 hover:bg-red-600"
                                 @click="cartStore.removeFromCart(product)"

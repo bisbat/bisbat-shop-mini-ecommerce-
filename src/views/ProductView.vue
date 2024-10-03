@@ -41,7 +41,6 @@ const buyNow = (product: any, quantity: number) => {
         <UserLayout />
         <div class="container mx-auto mt-8">
             <div class="flex flex-col lg:flex-row gap-10">
-                <!-- Product Image -->
                 <div class="w-full lg:w-1/2">
                     <img
                         class="rounded-lg shadow-lg w-full h-auto object-cover"
@@ -50,7 +49,6 @@ const buyNow = (product: any, quantity: number) => {
                     />
                 </div>
 
-                <!-- Product Details -->
                 <div class="w-full lg:w-1/2">
                     <h1 class="text-4xl font-bold mb-4">{{ product?.name }}</h1>
                     <p class="text-lg text-gray-600 mb-4">
@@ -60,7 +58,6 @@ const buyNow = (product: any, quantity: number) => {
                         Price: ${{ product?.price }}
                     </p>
 
-                    <!-- Quantity controls -->
                     <div class="flex items-center mb-4">
                         <button
                             class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300"
@@ -77,12 +74,10 @@ const buyNow = (product: any, quantity: number) => {
                         </button>
                     </div>
 
-                    <!-- Stock information -->
                     <div class="text-lg text-gray-500 mb-6">
                         In stock: {{ product?.inStock }}
                     </div>
 
-                    <!-- Buttons -->
                     <div class="flex gap-4">
                         <button
                             class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"

@@ -12,7 +12,6 @@ const furnitureTypes = Array.from(
 const selectedFurnitureType = ref<string>('')
 const searchInput = ref('')
 
-// Handle the custom event from child component
 const handleSearchUpdate = (newSearchValue: string) => {
     searchInput.value = newSearchValue
 }
@@ -20,14 +19,12 @@ const handleSearchUpdate = (newSearchValue: string) => {
 const filteredProducts = computed(() => {
     let filtered = products
 
-    // Filter by selected type
     if (selectedFurnitureType.value !== '') {
         filtered = filtered.filter(
             (product) => product.type === selectedFurnitureType.value
         )
     }
 
-    // Filter by search input
     if (searchInput.value !== '') {
         filtered = filtered.filter((product) =>
             product.name.toLowerCase().includes(searchInput.value.toLowerCase())

@@ -10,7 +10,6 @@ const address = ref('')
 <template>
     <Userlayout />
     <div class="container mx-auto p-4">
-        <!-- Address and Payment Section -->
         <div class="bg-white shadow-md rounded-lg p-6 mb-6">
             <h2 class="text-2xl font-semibold mb-4">Checkout</h2>
             <div class="mb-4">
@@ -52,7 +51,6 @@ const address = ref('')
             </div>
         </div>
 
-        <!-- Submit Button -->
         <div class="flex justify-end mt-6">
             <button
                 class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline"

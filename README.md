@@ -13,3 +13,6 @@ The Furniture Shop is a mini e-commerce web application built using Vue.js. It a
 - **State Management:** Pinia for managing cart items.
 - **Routing:** Vue Router for handling navigation between views.
 - **Design:** Tailwind CSS for a responsive and modern user interface.
+## Deployment
+This project deployed by using Vercel
+- Here is demo : <https://bisbat-shop-mini-ecommerce.vercel.app/>
